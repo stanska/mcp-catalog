@@ -1,0 +1,13 @@
+ARG BASE_TAG=main
+FROM ghcr.io/obot-platform/mcp-images/base-node:${BASE_TAG}
+
+#ARG MCP_PACKAGE
+#ARG MCP_VERSION
+
+USER root
+
+# Install the MCP package globally and clean npm cache to avoid security alerts
+RUN npm install -g @modelcontextprotocol/server-sequential-thinking && \
+    npm cache clean --force
+
+USER 1000
