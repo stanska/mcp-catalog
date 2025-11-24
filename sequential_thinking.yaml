@@ -12,8 +12,6 @@ toolPreview:
 runtime: containerized
 containerizedConfig:
   image: mcp/sequentialthinking:latest
-  port: 8099
-  path: /
   args: [
     "run",
     "-i",
