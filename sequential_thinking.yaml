@@ -14,8 +14,9 @@ containerizedConfig:
   image: mcp/sequentialthinking:d6a0f7b3a657
   port: 8099
   path: /
-  args:
-      - run
-      - -i
-      - --rm
-      - mcp/sequentialthinking
+  args: [
+    "run",
+    "-i",
+    "--rm",
+    "mcp/sequentialthinking"
+  ]
