@@ -11,7 +11,7 @@ toolPreview:
       uri: The URI of the content to convert (supports http://, https://, file://, data:)
 runtime: containerized
 containerizedConfig:
-  image: mcp/sequentialthinking:d6a0f7b3a657
+  image: mcp/sequentialthinking:latest
   port: 8099
   path: /
   args: [
