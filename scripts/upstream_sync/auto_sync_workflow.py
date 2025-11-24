@@ -29,8 +29,8 @@ from openai import OpenAI
 # Registry and repository configuration
 MODELCONTEXTPROTOCOL_REGISTRY_URL = "https://registry.modelcontextprotocol.io/v0/servers"
 GITHUB_MCP_REGISTRY_URL = "https://github.com/mcp"
-TARGET_REPO_FULL = os.getenv("GITHUB_REPOSITORY", "stanska/mcp-catalog")
-CATALOG_OWNER = os.getenv("CATALOG_OWNER", "stanska")
+TARGET_REPO_FULL = os.getenv("GITHUB_REPOSITORY", "obot-platform/mcp-catalog")
+CATALOG_OWNER = os.getenv("CATALOG_OWNER", "obot-platform")
 CATALOG_REPO = os.getenv("CATALOG_REPO", "mcp-catalog")
 
 # Authentication tokens
@@ -347,7 +347,7 @@ def create_issue_for_server(server: dict) -> tuple[str, int, str]:
     
     body_lines.extend([
         "", "---", "",
-        "If we want to catalog this server, please add/update its YAML in `stanska/mcp-catalog` and link the PR here."
+        "If we want to catalog this server, please add/update its YAML in `obot-platform/mcp-catalog` and link the PR here."
     ])
     
     body = "\n".join(body_lines)
