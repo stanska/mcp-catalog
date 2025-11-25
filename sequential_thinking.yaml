@@ -11,4 +11,4 @@ toolPreview:
       uri: The URI of the content to convert (supports http://, https://, file://, data:)
 runtime: npx
 npxConfig:
-  package: modelcontextprotocol/server-sequential-thinking
+  package: @modelcontextprotocol/server-sequential-thinking
