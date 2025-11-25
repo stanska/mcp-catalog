@@ -1,9 +1,10 @@
 name: Sequential-Thinking
 description: 'Sequential-Thinking - An MCP server implementation that provides a tool for dynamic and reflective problem-solving through a structured thinking process.'
+
 metadata:
   categories: Developer Tools
   allow-multiple: "true"
-icon: https://www.google.com/imgres?q=sequential%20thinking%20icon&imgurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-vector%2Fsequential-process-glyph-icon-order-260nw-1015790182.jpg&imgrefurl=https%3A%2F%2Fwww.shutterstock.com%2Fimage-vector%2Fsequential-process-glyph-icon-order-1015790182&docid=Ld_DLGV00i9YqM&tbnid=0iReBDClzWVw4M&vet=12ahUKEwij7rquwY2RAxV-AdsEHYJXDGcQM3oECDIQAA..i&w=247&h=280&hcb=2&ved=2ahUKEwij7rquwY2RAxV-AdsEHYJXDGcQM3oECDIQAA
+icon: https://avatars.githubusercontent.com/u/168166?s=200&v=4
 repoURL: https://github.com/modelcontextprotocol/servers/tree/88a2ac4/src/sequentialthinking
 toolPreview:
   - name: sequential_thinking
