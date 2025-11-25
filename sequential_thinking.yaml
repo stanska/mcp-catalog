@@ -2,17 +2,13 @@ name: Sequential-Thinking
 description: 'Sequential-Thinking description'
 metadata:
   categories: Document Processing
-icon: https://avatars.githubusercontent.com/u/6154722?s=48&v=4
+icon:  ...
 repoURL: https://github.com/modelcontextprotocol/servers/tree/88a2ac4/src/sequentialthinking
 toolPreview:
   - name: sequential_thinking
     description: ....
     params:
       uri: The URI of the content to convert (supports http://, https://, file://, data:)
-runtime: containerized
-containerizedConfig:
-  image: mcp/sequential-thinking:latest
-  port: 8099
-  path: /
-  args:
-    - sequential-thinking-mcp
+runtime: npx
+npxConfig:
+  package: modelcontextprotocol/server-sequential-thinking
