@@ -20,27 +20,11 @@ description: |
 metadata:
   categories: Data Storage & Management, Knowledge Management
   allow-multiple: "true"
-icon: https://raw.githubusercontent.com/modelcontextprotocol/servers/main/src/memory/memory.svg
+icon: https://t3.ftcdn.net/jpg/16/87/44/56/360_F_1687445606_POwAPCZGBFPHVdji0YAazK1PJmdDJ61Y.jpg
 repoURL: https://github.com/modelcontextprotocol/servers/tree/main/src/memory
-runtime: containerized
-containerizedConfig:
-  image: ghcr.io/obot-platform/mcp-images/memory:latest
-  port: 8100
-  path: /
-  args:
-    - node
-    - /app/dist/index.js
-  env:
-    - key: MEMORY_FILE_PATH
-      value: /app/dist/memory.jsonl
-  volumes:
-    - claude-memory:/app/dist
-env:
-  - key: MEMORY_FILE_PATH
-    name: Memory File Path
-    required: false
-    sensitive: false
-    description: Path to the memory storage JSONL file (defaults to memory.jsonl in server directory)
+runtime: npx
+npxConfig:
+  package: "@modelcontextprotocol/server-memory"
 toolPreview:
   - name: create_entities
     description: Create new entities in the knowledge graph. Entities are primary nodes representing people, organizations, events, or concepts. Each entity can have a type and initial observations.
