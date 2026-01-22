@@ -223,4 +223,4 @@ env:
 runtime: uvx
 uvxConfig:
   package: snowflake-labs-mcp
-  args: ["--service-config-yaml=${SERVICE_CONFIG_YAML}", "--password=${SNOWFLAKE_PAT}", "--account=EKERNVR-BVNK_AWS_DUBLIN", "--user=${SNOWFLAKE_USER}", "--warehouse=WH_USERS"]
+  args: ["--service-config-yaml=${SERVICE_CONFIG_YAML}", "--password=${SNOWFLAKE_PAT}", "--user=${SNOWFLAKE_USER}"]
