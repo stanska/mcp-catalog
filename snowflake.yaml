@@ -203,6 +203,7 @@ toolPreview:
       limit: "Optional LIMIT for number of rows to return - default: None"
 
 env:
+  - name: Snowflake User
     key: SNOWFLAKE_USER
     description: Your Snowflake username
     required: true
