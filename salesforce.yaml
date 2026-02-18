@@ -191,4 +191,4 @@ containerizedConfig:
   image: ghcr.io/obot-platform/salesforce-mcp:latest
   port: 9000
   path: /
-type: multi
+isMultiUser: true
