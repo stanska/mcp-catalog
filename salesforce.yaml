@@ -60,11 +60,6 @@ metadata:
   categories: CRM
 icon: https://img.icons8.com/?size=100&id=38804&format=png&color=000000
 repoURL: https://github.com/obot-platform/salesforce-mcp
-runtime: containerized
-containerizedConfig:
-  image: ghcr.io/obot-platform/salesforce-mcp:latest
-  port: 9000
-  path: /
 env:
   - key: SFDC_CLIENT_ID
     name: Salesforce Client ID
@@ -191,3 +186,8 @@ toolPreview:
     params:
       opportunity: A JSON-formatted string containing the opportunity fields to update in the existing opportunity
       opportunity_id: A string containing the Salesforce Id of the opportunity to update
+runtime: containerized
+containerizedConfig:
+  image: ghcr.io/obot-platform/salesforce-mcp:latest
+  port: 9000
+  path: /
