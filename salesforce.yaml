@@ -61,21 +61,21 @@ metadata:
 icon: https://img.icons8.com/?size=100&id=38804&format=png&color=000000
 repoURL: https://github.com/obot-platform/salesforce-mcp
 env:
-  - key: SFDC_CLIENT_ID
-    name: Salesforce Client ID
-    required: true
-    sensitive: true
-    description: Your Salesforce Connected App Consumer Key (Client ID)
-  - key: SFDC_CLIENT_SECRET
-    name: Salesforce Client Secret
-    required: true
-    sensitive: true
-    description: Your Salesforce Connected App Consumer Secret (Client Secret)
-  - key: SFDC_DOMAIN
-    name: Salesforce Domain
-    required: false
-    sensitive: false
-    description: Your Salesforce domain (defaults to 'organization.my' if not specified)
+- key: SFDC_CLIENT_ID
+  name: Salesforce Client ID
+  required: true
+  sensitive: true
+  description: Your Salesforce Connected App Consumer Key (Client ID)
+- key: SFDC_CLIENT_SECRET
+  name: Salesforce Client Secret
+  required: true
+  sensitive: true
+  description: Your Salesforce Connected App Consumer Secret (Client Secret)
+- key: SFDC_DOMAIN
+  name: Salesforce Domain
+  required: false
+  sensitive: false
+  description: Your Salesforce domain (defaults to 'organization.my' if not specified)
 
 toolPreview:
   - name: convert_lead_to_opportunity
