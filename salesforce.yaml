@@ -58,7 +58,6 @@ description: |
      - Set `SFDC_DOMAIN` to your Salesforce domain (for example, mydomain.devloping.my)
 metadata:
   categories: CRM
-  allow-multiple: "false"
 icon: https://img.icons8.com/?size=100&id=38804&format=png&color=000000
 repoURL: https://github.com/obot-platform/salesforce-mcp
 runtime: containerized
